@@ -104,6 +104,7 @@ class PDFViewer {
                 const teamInfo = this.teamData.teams[participant.id];
                 item.innerHTML = `
                     <span class="team-id">TN${participant.id}</span>
+                    <span class="team-short">${teamInfo ? teamInfo.shortname : ''}</span>
                 `;
                 
                 if (participant.id === this.currentParticipant) {
